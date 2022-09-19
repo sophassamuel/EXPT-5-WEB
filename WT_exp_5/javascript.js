@@ -38,12 +38,12 @@ function calculate(){
 function grow() {   
     var r = parseInt(document.getElementById("rows").value);
     var c = parseInt(document.getElementById("cols").value);
-    var l = ["Assets/apple.jpg", "Assets/orange.jpg"];
+    var l = ["Assets\apple.jpg", "Assets\orange.jpg"];
     var garden = document.getElementById("garden");
     for (let i = 0; i < r; i++) {
         for (let j = 0; j < c; j++) {
             var fruit = Math.floor(Math.random() * 2);
-            var img = '<img src=' + l/[fruit] + ' width = "150px" height ="150px"></img>';
+            var img = '<img src=' + l[fruit] + ' width = "150px" height ="150px"></img>';
             garden.innerHTML += img;
         }
         garden.innerHTML += "<br>";
@@ -70,14 +70,14 @@ function flip() {
     var tail = document.getElementById("num_tails");
     var h = parseInt(head.innerHTML);
     var t = parseInt(tail.innerHTML);
-    var lst = ["head.jpeg", "tail.jpeg"];
+    var lst = ["Assets\head.jpeg", "Assets\tail.jpeg"];
     var s = Math.floor(Math.random()*2);
     if (lst[s]==lst[0]) {
         head.innerHTML = h+1;
     } else {
         tail.innerHTML = t+1;
     };
-    img.src = "Assets/" + lst[s];
+    img.src = "Assets/"+lst[s];
 }
 
 function cake(){
