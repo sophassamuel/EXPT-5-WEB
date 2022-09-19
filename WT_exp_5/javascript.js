@@ -38,7 +38,7 @@ function calculate(){
 function grow() {   
     var r = parseInt(document.getElementById("rows").value);
     var c = parseInt(document.getElementById("cols").value);
-    var l = ["Assets\apple.jpg", "Assets\orange.jpg"];
+    var l = ["Assets/apple.jpg", "Assets/orange.jpg"];
     var garden = document.getElementById("garden");
     for (let i = 0; i < r; i++) {
         for (let j = 0; j < c; j++) {
