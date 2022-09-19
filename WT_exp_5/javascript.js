@@ -70,14 +70,14 @@ function flip() {
     var tail = document.getElementById("num_tails");
     var h = parseInt(head.innerHTML);
     var t = parseInt(tail.innerHTML);
-    var lst = ["Assets\head.jpeg", "Assets\tail.jpeg"];
+    var lst = ["head.jpeg", "tail.jpeg"];
     var s = Math.floor(Math.random()*2);
     if (lst[s]==lst[0]) {
         head.innerHTML = h+1;
     } else {
         tail.innerHTML = t+1;
     };
-    img.src = lst[s];
+    img.src = "Assets/" + lst[s];
 }
 
 function cake(){
