@@ -77,7 +77,7 @@ function flip() {
     } else {
         tail.innerHTML = t+1;
     };
-    img.src = "Assets/"+lst[s];
+    img.src = lst[s];
 }
 
 function cake(){
