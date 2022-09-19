@@ -46,7 +46,7 @@ function grow() {
             var img = '<img src=' + l/[fruit] + ' width = "150px" height ="150px"></img>';
             garden.innerHTML += img;
         }
-        garden.innerHTML += "<br
+        garden.innerHTML += "<br>";
     }
 }
 
