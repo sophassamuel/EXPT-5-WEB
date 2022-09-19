@@ -43,10 +43,10 @@ function grow() {
     for (let i = 0; i < r; i++) {
         for (let j = 0; j < c; j++) {
             var fruit = Math.floor(Math.random() * 2);
-            var img = '<img src=' + l[fruit] + ' width = "150px" height ="150px"></img>';
+            var img = '<img src=' + l/[fruit] + ' width = "150px" height ="150px"></img>';
             garden.innerHTML += img;
         }
-        garden.innerHTML += "<br>";
+        garden.innerHTML += "<br
     }
 }
 
